@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alquenos: Información Detallada</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ffefba, #ffffff);
+            color: #333;
+            animation: fadeIn 1.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        header {
+            background-color: #6a1b9a;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+            animation: slideDown 1s ease-out;
+        }
+        @keyframes slideDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        nav {
+            background-color: #4a148c;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #7b1fa2;
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: fadeInUp 1s ease-out;
+        }
+        @keyframes fadeInUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        section h2 {
+            color: #6a1b9a;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #6a1b9a;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .interactive {
+            text-align: center;
+            margin: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #6a1b9a;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        button:hover {
+            background-color: #4a148c;
+            transform: scale(1.05);
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script>
+        function toggleContent(id) {
+            const element = document.getElementById(id);
+            element.classList.toggle('hidden');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Todo sobre los Alquenos</h1>
+        <p>Información completa sobre su definición, obtención, reacciones químicas y más</p>
+    </header>
+
+    <nav>
+        <a href="#definicion">Definición</a>
+        <a href="#obtencion">Métodos de Obtención</a>
+        <a href="#reacciones">Reacciones Químicas</a>
+        <a href="#mecanismo">Mecanismo de Reacción</a>
+        <a href="#usos">Usos</a>
+    </nav>
+
+    <section id="definicion">
+        <h2>¿Qué son los Alquenos?</h2>
+        <p>Los alquenos son hidrocarburos insaturados que contienen uno o más enlaces dobles entre átomos de carbono. Su fórmula general es <strong>CₙH₂ₙ</strong>. Son compuestos importantes en química orgánica y petroquímica.</p>
+        <p>Ejemplos comunes incluyen:</p>
+        <ul>
+            <li>Eteno (CH₂=CH₂)</li>
+            <li>Propeno (CH₂=CH-CH₃)</li>
+            <li>But-2-eno (CH₃-CH=CH-CH₃)</li>
+        </ul>
+        <div class="image-container">
+            <img src="https://es-puraquimica.weebly.com/uploads/6/1/9/4/6194280/9367955_orig.png" alt="Estructura del Eteno">
+        </div>
+    </section>
+
+    <section id="obtencion">
+        <h2>Métodos de Obtención</h2>
+        <p>Los alquenos se obtienen mediante diversas reacciones químicas:</p>
+        <ol>
+            <li><strong>Deshidratación de alcoholes:</strong> Calentando alcoholes en presencia de ácido sulfúrico o fosfórico.</li>
+            <li><strong>Deshalogenación:</strong> Eliminando halógenos de dihaluros vecinales con zinc.</li>
+            <li><strong>Deshidrohalogenación:</strong> Eliminando un hidrógeno y un halógeno con bases fuertes.</li>
+            <li><strong>Craqueo catalítico:</strong> Proceso industrial donde hidrocarburos más grandes se descomponen para formar alquenos y otros compuestos.</li>
+        </ol>
+        <div class="image-container">
+            <img src="https://www.shutterstock.com/image-vector/chemical-formula-ethyl-alcohol-molecular-260nw-2346645255.jpg" alt="Estructura del Etanol">
+        </div>
+    </section>
+
+    <section id="reacciones">
+        <h2>Reacciones Químicas</h2>
+        <p>Los alquenos participan en diversas reacciones debido a su enlace doble, incluyendo:</p>
+        <ul>
+            <li><strong>Hidrogenación:</strong> CH₂=CH₂ + H₂ → CH₃-CH₃ (etanol).</li>
+            <li><strong>Halogenación:</strong> CH₂=CH₂ + Cl₂ → CH₂Cl-CH₂Cl (dicloroetano).</li>
+            <li><strong>Hidratación:</strong> CH₂=CH₂ + H₂O → CH₃-CH₂OH (etanol).</li>
+        </ul>
+        <div class="interactive">
+            <button onclick="toggleContent('extra-info')">Mostrar más detalles</button>
+            <div id="extra-info" class="hidden">
+                <p>Los alquenos también pueden polimerizarse para formar plásticos como el polietileno.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="mecanismo">
+        <h2>Mecanismo de Reacción</h2>
+        <p>Veamos el paso a paso de la deshidratación de alcoholes:</p>
+        <ol>
+            <li><strong>Protonación:</strong> El alcohol es protonado por un ácido.</li>
+            <li><strong>Formación del carbocatión:</strong> Se elimina agua, dejando un carbocatión.</li>
+            <li><strong>Eliminación:</strong> El carbocatión pierde un protón, formando el alqueno.</li>
+        </ol>
+        <div class="image-container">
+            <img src="https://i.ytimg.com/vi/3OFqRKuEddI/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGGUgZShlMA8=&rs=AOn4CLCOlhYS78nf0-RngUFppVyCQWfqagg" alt="Mecanismo de reacción">
+        </div>
+    </section>
+
+    <section id="usos">
+        <h2>Usos de los Alquenos</h2>
+        <p>Los alquenos tienen aplicaciones importantes:</p>
+        <ul>
+            <li>Producción de plásticos como el polietileno y polipropileno.</li>
+            <li>Fabricación de productos químicos industriales como alcoholes y éteres.</li>
+            <li>Material base para detergentes, solventes y aditivos de combustibles.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© Este es el todo o nada de pasar la materia en 1 de 14 millones 605 futuros posibles.</p>
+    </footer>
+</body>
+</html>
